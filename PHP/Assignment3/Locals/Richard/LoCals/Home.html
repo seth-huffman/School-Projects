@@ -1,0 +1,37 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/Home.css" type="text/css" media="screen"/>
+</head>
+<body>
+  <div class="MainContent">
+    <h1> LoCals </h1>
+    <table>
+      <tr>
+        <td> <button> <b> Log In </b> </button> </td>
+        <td> <a href="Product.html"> <b> Products </b> </a> </td>
+      </tr>
+    </table>
+    <div class="LogInID">
+      <b> Email Address &nbsp </b> or <b>&nbsp Username </b>
+    </div>
+    <div class="LogInID">
+      <b>Password</b>
+    </div>
+    <p> Sorry, the information that you have enter is incorrect. </br> Please try again. </p>
+  </div>
+</body>
+<img src="img/oranges.jpg">
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $(".LogInID").toggle();
+    });
+});
+</script>

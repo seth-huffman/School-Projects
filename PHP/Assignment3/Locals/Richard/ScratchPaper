@@ -1,0 +1,204 @@
+<?php
+require_once("logger.php");
+require_once("framework.php");
+//require_once("db.php");
+
+session_start();
+
+do_openlog();
+do_set_eol(1);
+do_write_header("Pizza Pizza Pizza");
+$cmd1=htmlspecialchars($_POST["n_cmd1"]);
+//echo "debug cmd1 is ".$cmd1."<br>\n";
+switch($cmd1)
+{
+ case "req_home":
+   //$pkey=$_SESSION["pkey"];
+   //echo "Your pkey is ".$pkey;
+   do_write_page_title("Home");
+   do_write_btn1("Browse site","req_browse_site");
+   do_write_break(2);
+   do_write_btn1("Login","req_login");
+   do_write_break(2);
+   do_write_btn1("Help","req_help");
+   do_write_break(2);
+   do_write_btn1("Backup","req_backup");
+   do_write_break(2);
+   do_write_btn1("Checksite","req_checksite");
+   do_write_break(2);
+   do_write_btn1("Create new account","req_new_account");
+   do_write_break(2);
+   do_write_btn1("Create new new account","req_new_new_account");
+ break;
+ case "req_browse_site":
+   do_write_page_title("Browse site");
+   do_write_btn1("Home","req_home");
+   do_write_break(2);
+   do_write_btn1("Create account","req_create_account");
+ break;
+ case "req_new_account":
+   do_write_page_title("Create a new account");
+   echo "First name:";
+   echo "<input type=\"text\" name=\"n_fname\"/>";
+   do_write_break(1);
+   echo "Last name:";
+   echo "<input type=\"text\" name=\"n_lname\"/>";
+   do_write_break(4);
+
+   do_write_btn1("Create the account","do_new_account");
+   do_write_break(1);
+   do_write_btn1("Home","req_home");
+ break;
+ case "req_new_new_account":
+   do_write_page_title("Create a new new account");
+
+   do_begin_table();
+   do_add_text_to_table("First name","n_fname");
+   do_add_text_to_table("Middle name","n_mname");
+   do_add_text_to_table("Last name","n_lname");
+   do_add_text_to_table("Street","n_street");
+   do_add_text_to_table("City","n_city");
+   do_add_text_to_table("State","n_state");
+   do_add_text_to_table("Zip","n_zip");
+   do_add_text_to_table("Phone","n_phone");
+   do_add_text_to_table("Email","n_email");
+   do_end_table();
+
+   do_write_btn1("Create the account","do_new_account");
+   do_write_break(1);
+   do_write_btn1("Home","req_home");
+ break;
+ case "do_new_new_account":
+   do_write_page_title("Create a new new account");
+
+   if (isset($_POST["n_lname"]))
+   {
+     $lname=htmlspecialchars($_POST["n_lname"]);
+   }
+   else {
+     echo "<hr>Expected n_lname<hr>";
+     do_log_error("Expected n_lname");
+   }
+
+   $fname=htmlspecialchars($_POST["n_fname"]);
+   $email=htmlspecialchars($_POST["n_email"]);
+
+   echo "The first name is ".$fname."<br>";
+   echo "The last name is ".$lname."<br>";
+   echo "The email name is ".$email."<br>";
+
+   do_write_break(1);
+   do_write_btn1("Home","req_home");
+ break;
+ case "do_new_account":
+  do_write_page_title("Create new account");
+  $fname=htmlspecialchars($_POST["n_fname"]);
+  $lname=htmlspecialchars($_POST["n_lname"]);
+  echo "The first name is ".$fname."<br>";
+  echo "The last name is ".$lname."<br>";
+  do_write_break(1);
+  do_write_btn1("Home","req_home");
+ break;
+ case "req_checksite":
+  do_write_page_title("Checksite");
+  do_write_btn1("Home","req_home");
+ break;
+ case "req_login":
+   do_write_page_title("Login");
+
+   do_begin_table();
+   do_add_text_to_table("Username","n_uname");
+   do_add_text_to_table("Password","n_passwd");
+   do_end_table();
+
+   do_write_btn1("Login","do_login");
+   do_write_break(1);
+   do_write_btn1("Home","req_home");
+ break;
+ case "do_login":
+  do_write_page_title("Do Login");
+  if (isset($_POST["n_uname"]))
+  {
+    $uname=htmlspecialchars($_POST["n_uname"]);
+  }
+  else {
+    echo "<hr>Expected n_uname<hr>";
+    do_log_error("Expected n_uname");
+  }
+  if (isset($_POST["n_passwd"]))
+  {
+    $passwd=htmlspecialchars($_POST["n_passwd"]);
+  }
+  else {
+    echo "<hr>Expected n_passwd<hr>";
+    do_log_error("Expected n_passwd");
+  }
+
+  echo "The username is ".$uname."<br>";
+  echo "The password is ".$passwd."<br>";
+
+  $db=odb_connect();
+  $query="select pkey from ouser where username="."'".$uname."''";
+  $pkey=odb_get_field($query,$db);
+  echo "pkey is " .$pkey."<br>";
+
+  $query="select password from ouser where pkey=".$pkey;
+  $passwd_db=odb_get_field($query,$db);
+  echo "password is " .$passwd_db."<br>";
+
+  if(!strcmp($passwd,$passwd_db))
+  {
+    $query="select access_level from ouser where pkey=".$pkey;
+    $access_level=odb_get_field($query,$db);
+    echo "access level is ".$access_level."<br>";
+
+    $_SESSION["pkey"]="$pkey";
+
+    if(!strcmp($access_level,"webmaster"))
+    {
+      $pkey=$_SESSION["pkey"];
+
+      echo "Your pkey is ".$pkey;
+
+      do_write_btn1("Change your password","req_change_password");
+      do_write_break(1);
+      do_write_btn1("Create a new account","req_create_an_account");
+    }
+    else {
+      if(!strcmp($access_level,"customer"))
+      {
+        do_write_btn1("Browse the site","req_browse_site");
+      }
+    }
+    else {
+      echo "access denied";
+
+    }
+}
+    odb_close($db);
+
+    do_write_btn1 ("Home","req_home");
+break;
+ case "req_create_account":
+   do_write_page_title("Create account");
+   echo "Username:";
+   echo "<input type=\"text\" name=\"n_uname\"/>";
+   do_write_btn1("Home","req_home");
+ break;
+ case "req_help":
+  do_write_page_title("HELP");
+  echo "THis is some help";
+  do_write_break(2);
+  do_write_btn1("Home","req_home");
+ break;
+ case "req_backup":
+  do_write_page_title("BACKUP");
+  echo "This is going a backup";
+  do_write_break(2);
+  do_write_btn1("Home","req_home");
+break;
+}
+
+do_write_footer();
+do_closelog();
+?>

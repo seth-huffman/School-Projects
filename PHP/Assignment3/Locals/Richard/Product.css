@@ -1,0 +1,219 @@
+html, body {
+    font-family: Georgia;
+    font-kerning: auto;
+    letter-spacing: .09em;
+    padding: 0%;
+    margin: 0%;
+    font-variant-ligatures: none;
+    overflow: hidden;
+    color: white;
+  }
+h1, h2, h3, h4, h5, h6 {
+    margin: 0%;
+  }
+h1 {
+    font-weight: 700;
+    padding-bottom: 2%;
+    font-size: 2.65em;
+  }
+h2 {
+    margin: 0%;
+    font-size: 1em;
+  }
+h2, h4, h6 {
+  color: #23363A;
+}
+h3, h5 {
+    font-weight: 100;
+  }
+h4 {
+    font-size: .77em;
+  }
+h5 {
+    font-weight: 700;
+    font-size: .55em;
+    margin-top: 1.5%;
+  }
+h6 {
+  font-size: .85em;
+  }
+.column1 {
+
+    position: fixed;
+    float: left;
+    width: 30%;
+    height: 800px;
+    padding-left: 3.4%;
+    padding-right: .6%;
+    padding-top: 3.7%;
+    padding-bottom: .3%;
+    text-align:left;
+    overflow: hidden;
+  }
+.LogInID {
+    margin-top: 1.1%;
+  }
+.column2 {
+    width: 66%;
+    float: right;
+  }
+h1, h3, h5 {
+    color: white;
+  }
+p {
+  margin: 2%;
+  font-size: .77em;
+}
+.column1 {
+    position: fixed;
+    background: #23363A); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, #23363A, #131D1F); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #23363A, #131D1F); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #23363A, #131D1F); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #23363A, #131D1F); /* Standard syntax (must be last) */
+
+    float: left;
+    width: 30%;
+    height: 800px;
+    padding-left: 3.4%;
+    padding-right: .6%;
+    padding-top: 3.7%;
+    padding-bottom: .3%;
+    text-align:left;
+}
+.LogInID {
+  margin-top: 1.1%;
+}
+.column2 {
+    width: 66%;
+    float: right;
+}
+.column2Part2 {
+  margin: 0%;
+  height: 100%;
+  overflow: auto;
+}
+img {
+  width: 100%;
+}
+.Profile, .Log {
+  height: 8.5%;
+  width: 7.4%;
+  padding-top: 3%;
+  margin: 0%;
+  position: absolute;
+  background-color: white;
+  text-align:center;
+}
+.Profile {
+    top: 0%;
+    right: 7.6%;
+}
+.Log {
+    top: 14%;
+    right: 0%;
+}
+.BuyNow {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 5%;
+  background-color: white;
+}
+.BuyNow, .PurchaseMessage {
+    margin-top: 3%;
+    content: normal;
+}
+.Cart {
+  height: 22%;
+  margin: 0%;
+  overflow: scroll;
+}
+.CartTotal {
+  height: 2%;
+  margin: 0%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 5%;
+  background-color: white;
+  width: 56%;
+}
+.BuyNow {
+  height: 2%;
+}
+.PurchaseMessage {
+  height: 8%;
+}
+.BuyNow, .PurchaseMessage {
+  width: 56%;
+}
+.ItemsSelected, .CartTotalHeader {
+  margin-top: 15.9%;
+  margin-bottom: 0%;
+  font-size: 1.65em;
+  height: 3.7%;
+  width: 100%;
+}
+.Boxes4Cart {
+  margin-bottom: 2%;
+}
+.Boxes4Cart {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 5%;
+  background-color: white;
+  height: 6%;
+  width: 56%;
+}
+.BlankSpace {
+  height: 4%;
+}
+.Product1, .Product2 {
+  height: 15%;
+  width: 40%;
+  margin-left: 7%;
+  margin-top: 8.4%;
+}
+.Product2 {
+  margin-right: 5%;
+}
+.ProductDescription, .ProductImage {
+  height: 100%;
+}
+.ProductImage {
+  width: 30%;
+  background-color: black;
+}
+.ProductImage, .Product1 {
+  float: left;
+}
+.ProductDescription, .Product2 {
+  float: right;
+}
+.ProductDescription {
+  width: 64%;
+}
+.ChangePassword_Root{
+  margin-bottom: 0%;
+  font-size: 1.65em;
+  height: 3.7%;
+  width: 100%;
+  margin-top: 15%;
+
+}
+.Boxes{
+    height: 2%;
+    margin-bottom: 2%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    background-color: white;
+    width: 56%;
+  }
+  .ManageAccounts, .MasterAccounts, .MasterAccounts_Root {
+      font-size: 1.65em;
+      height: 3.7%;
+      width: 100%;
+    }
+  .MasterAccounts_Root {
+    margin-top: 5%;
+    }

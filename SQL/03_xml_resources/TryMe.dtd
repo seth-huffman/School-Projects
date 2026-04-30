@@ -1,0 +1,11 @@
+
+<!ELEMENT car_compare (brands+)>
+<!ELEMENT brands (name,year+,price+,trim+,color+,type)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT trim (#PCDATA)>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+
+<!ATTLIST brands id ID #REQUIRED>

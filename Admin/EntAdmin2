@@ -1,0 +1,30 @@
+CD /ETC/DIRSRV/
+ls
+cd schema/
+ ls
+ vim 00core.ldif
+ vim 50ns-web.ldif
+ vim 50ns-mail.ldif
+
+
+
+
+
+
+
+ find /etc/dirsrv/schema/ -name *.ldif
+
+
+ verfiy
+ add tree
+ delete tree
+ select a school
+ select a location
+ select a building
+ select a room
+ add a user
+ delete a user
+
+
+
+ enter into a ds_menu

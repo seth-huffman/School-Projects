@@ -1,0 +1,89 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <div id="container">
+      <form id="calculator" name="calculator">
+        <input id="results" type="text" value="">
+            <br>
+          <button id="one" type="button" class="number" value="1">1</button>
+          <button id="two" type="button" class="number" value="2">2</button>
+          <button id="three" type="button" class="number" value="3">3</button>
+          <button id="add" type="button" class="calculate" value="+">+</button>
+            <br>
+          <button id="four" type="button" class="number" value="4">4</button>
+          <button id="five" type="button" class="number" value="5">5</button>
+          <button id="six" type="button" class="number" value="6">6</button>
+          <button id="subtract" type="button" class="calculate" value="-">-</button>
+            <br>
+          <button id="seven" type="button" class="number" value="7">7</button>
+          <button id="eight" type="button" class="number" value="8">8</button>
+          <button id="nine" type="button" class="number" value="9">9</button>
+          <button id="multiply" type="button" class="calculate" value="*">x</button>
+            <br>
+          <button id="zero" type="button" class="number" value="0">0</button>
+          <button id="equals" type="button" class="number" value="=">=</button>
+          <button id="divide" type="button" class="calculate" value="/">/</button>
+            <br>
+      </form>
+    </div>
+  </body>
+  <script>
+
+//Labeling all variables
+var add = document.getElementById("add"),
+    subtract = document.getElementById("subtract"),
+    multiply = document.getElementById("multiply"),
+    divide = document.getElementById("divide"),
+    equals = document.getElementById("equals");
+var allnumbers = [];
+var numbers = document.querySelectorAll(".number");
+
+
+//Loop adds numbers to result box
+for (var i = 0; i < numbers.length; i++) {
+  numbers[i].addEventListener("click", function(event){
+    var valueAsInteger = parseInt(event.target.value);
+    allnumbers.push(valueAsInteger);
+    document.getElementById("results").value += event.target.value;})
+    };
+
+// adds symbols to result box
+add.addEventListener("click", function(event){
+  document.getElementById("results").value += "+";
+  allnumbers.push("+");
+});
+subtract.addEventListener("click", function(event){
+  document.getElementById("results").value += "-";
+  allnumbers.push("-");
+});
+divide.addEventListener("click", function(event){
+  document.getElementById("results").value += "/";
+  allnumbers.push("/");
+});
+multiply.addEventListener("click", function(event){
+  document.getElementById("results").value += "*";
+  allnumbers.push("*");
+});
+
+//Loop places numbers in result box
+equals.addEventListener("click", function(event){
+  var a = allnumbers[0];
+  var b = allnumbers[2];
+  if (allnumbers[1] === "+") {
+    var result = a + b;
+  } else if (allnumbers[1] === "-") {
+    var result = a - b;
+  } else if (allnumbers[1] === "/") {
+    var result = a / b;
+  } else if (allnumbers[1] === "*") {
+    var result = a * b;
+  }
+  //Same as Eval function
+  console.log(allnumbers);
+  document.getElementById("results").value = result;
+});
+
+  </script>
+</html>

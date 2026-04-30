@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="TryMe.xsl"?>
+<!DOCTYPE car_compare SYSTEM "TryMe.dtd">
+<car_compare>
+
+  <brands id = "a1">
+    <name>Trax</name>
+    <year>2017</year>
+    <year>2017</year>
+    <year>2016</year>
+    <price>$21,895 </price>
+    <price>$23,795</price>
+    <price>$19,695</price>
+    <trim> LS </trim>
+    <trim> LT </trim>
+    <trim> LS </trim>
+    <color> Blue Topaz Metallic </color>
+    <color> Crimson Metallic </color>
+    <color> Nightfall Gray Metallic </color>
+    <type> Compact SUV </type>
+  </brands>
+
+  <brands id = "b2">
+    <name>Escape</name>
+    <year>2018</year>
+    <year>2017</year>
+    <price>$23,850</price>
+    <price>$23,750</price>
+    <trim> S </trim>
+    <trim> SE </trim>
+    <color> Cinnamon Glaze </color>
+    <color> Lightning Blue </color>
+    <type> SUV </type>
+  </brands>
+
+</car_compare>

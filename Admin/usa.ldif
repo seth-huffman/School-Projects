@@ -1,0 +1,7 @@
+# org example 
+dn: o=usa,dc=8bitb,dc=com
+objectClass: dcObject
+objectClass: organization
+dc: 8bitb
+o: usa
+description: usa container

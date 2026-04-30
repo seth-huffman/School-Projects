@@ -1,0 +1,36 @@
+cd
+cd 2017
+cd demos/
+ls
+mkdir
+ds
+cd ds
+
+
+
+
+vim mm.sh
+i
+(edit paste)
+
+
+
+
+
+
+
+(child menu)
+function_do_main_menu > function_do_ds_menu
+exit > return
+
+
+./mm.sh
+
+verify.sh
+
+
+
+e)
+  vim /etc/sysconfig/network-scripts/ifcfg-eth0
+  vim /etc/sysconfig/network
+  vim /etc/resolv.config

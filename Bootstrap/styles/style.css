@@ -1,0 +1,177 @@
+        body, html {
+            font-family: 'Oswald', sans-serif;
+        }
+        .col, .col-6, .col-12 {
+            border-radius: 10px;
+            border: solid 10px white;
+            padding: 20px
+        }
+        .hero { 
+            background-image: url("../assets/hero.jpg");
+            background-position: 200px center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 500px;
+            padding-left: 350px;
+            background-color: #292929;
+            min-height: 500px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column
+        }
+        .hero-main { 
+            background-image: url("../assets/hero.jpg");
+            background-position: 200px center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            padding-left: 350px;
+            background-color: #292929;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column
+        }
+        .nav-link {
+            text-transform: uppercase
+        }
+        h1 {
+            color: tomato;
+            font-style: italic;
+            text-transform: uppercase;
+            font-size: 72px;
+            margin: 0;
+            margin-left: 0px;
+            line-height: 29px;
+        }
+        .h2, h2 {
+            font-size: 40px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-style: italic;
+            color: #292929
+        }
+        .h3, h3 {
+            font-size: 30px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-style: italic;
+            color: #292929
+        }
+        .card-title {
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-style: italic;
+            color: #292929
+        }
+        h4 {
+            margin-left: 154px;
+            -webkit-text-fill-color: white;
+            -webkit-text-stroke-color: transparent;
+            font-size: 30px;
+            line-height: 34px;
+            -webkit-text-stroke-width: 1px;
+            font-style: italic;
+            text-transform: uppercase;
+        }
+        .h5, h5 {
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-style: italic;
+            color: #292929
+        }
+        h1 + h1 {
+            margin-left: 5px;
+            -webkit-text-stroke-color: rgba(255,99,71,.3);
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 1px;
+        }
+        .margin-auto {
+            margin: 0 auto
+        }
+        input, textarea {
+            font-family: 'Lato', sans-serif;
+            border-radius: 0 !important
+        }
+        textarea {
+            height: 140px !important
+        }
+        .btn-block {
+            display: block;
+            width: 100px;
+            margin: 10px auto;
+        }
+        .btn-info, .btn {
+            color: #fff;
+            background-color: tomato;
+            border-color: tomato;
+            text-transform: uppercase;
+        }
+        .btn {
+            width: 150px;
+        }
+        .btn-info:hover, .btn:hover {
+            color: #fff;
+            background-color: black;
+            border-color: black;
+        }
+        .card-text, p {
+            font-family: 'Lato', sans-serif;
+        }
+        p {
+            font-size: 14px
+        }
+        @media screen and (max-width: 990px) {
+            .collapse:not(.show) {
+                display: block;
+            }
+            .hero-main, .hero {
+                background-position: center center;
+                padding-left: 0px;
+                padding-top: 40px
+            }
+            h1, h4 {
+                text-align: center;
+                text-shadow: 1px 1px 10px black;
+            }
+            h1 {
+                color: tomato;
+                font-style: italic;
+                text-transform: uppercase;
+                font-size: 42px;
+                margin: 0;
+                    margin-left: 0px;
+                margin-left: 0px;
+                line-height: 21px;
+            }
+            h4 {
+                margin-left: 84px;
+                -webkit-text-fill-color: white;
+                -webkit-text-stroke-color: transparent;
+                font-size: 18px;
+                line-height: 0px;
+                -webkit-text-stroke-width: 1px;
+                font-style: italic;
+                text-transform: uppercase;
+            }
+            h1 + h1 {
+                text-align: center;
+                text-shadow: none;
+            }
+            .col-4 {
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            form.p-5 {
+                padding: 0 !important
+            }
+            .col-sm-6 {
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+
+          }
