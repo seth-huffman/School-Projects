@@ -1,0 +1,359 @@
+a {
+    text-decoration: none;
+}
+a:hover {
+    opacity: .5;
+}
+.block {
+    display: inline-block;
+    padding: 30px 70px;
+    width: calc(60% - 140px);
+    vertical-align: top;
+} 
+body {
+    overflow: hidden;
+    font-size: 0;
+    margin: 0;
+}
+.background {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 50px;
+    right: 50px;
+    z-index:-1;
+}
+.background div{
+    width: 100%;
+    height: 1022.8px;
+    background-image: url("../img/hero.jpg");
+    background-position: top 33%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.contact {
+    display: inline-block;
+    padding: 25px 50px;
+    width: calc(40% - 100px);
+    vertical-align: top;
+    background-image: linear-gradient(300deg, #162118, #253628);
+}
+.contact h3, .contact h6, .contact p{ 
+    color: white !important;
+}
+.footer {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: 50px;
+    height: 225px;
+}
+.fourth {
+    width: calc(27.5% - 110px);
+    display: inline-block;
+    padding: 15px 55px;
+    opacity: 0.8;
+    background-color: #ffffff;
+    vertical-align: top;
+    height: auto;
+    margin-top: 75px;
+}
+h1 {
+	text-transform: uppercase;
+    opacity: 1;
+    font-family: LibreBaskerville;
+    font-size: 98px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.02;
+    letter-spacing: 14.7px;
+    text-align: left;
+    color: #253628;
+    margin-top: 20px;
+}
+h2 {
+	text-transform: uppercase;
+	font-family: 'Libre Baskerville', serif;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.23;
+	color: #083931;
+    margin: 0 0 10px 0;
+    font-size: 35px;
+    letter-spacing: 10.5px;
+  }
+h3 {
+	text-transform: uppercase;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 25px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	letter-spacing: 7.5px;
+	color: #083931;
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+h4 {
+    font-family: 'Libre Baskerville', serif;
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.24;
+	letter-spacing: 9px;
+	color: #083931;
+	margin: 60px 0 10px;
+}
+h5 {
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.18;
+    letter-spacing: 3.4px;
+    text-align: left;
+    color: #c3ccd3;
+    margin-top:10px;
+}
+h6 {
+    margin: 0;    
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: #c0ceb2;
+}
+.hero-text{
+    position: absolute;
+    top: 45%;
+    left: 100px;
+    transform: translate(50px, -50%);
+    -webkit-filter: brightness(200%) opacity(30%);
+    filter:brightness(64%) opacity(20%);
+}
+.hero-text h5{
+    font-family: Montserrat;
+    font-size: 39px;
+    font-weight: 600;
+    letter-spacing: 7.8px;
+    color: #253628;
+}
+.interal-hero {
+    margin-left: 80px;
+    display: inline-block;
+    width: calc(45% - 80px);
+    background-image: url("../img/lorem-hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.interal-hero h1{
+    -webkit-filter: brightness(200%) opacity(30%);
+    filter: brightness(64%) opacity(30%);
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    left: 100px;
+}
+.interal-information {
+    display: inline-block;
+    width: 55%;
+    height: 1000px;
+    vertical-align: top;
+}
+.interal-information .header {
+    width: calc(100% - 70px);
+    min-height: 239px;
+    background-color: #ebebe9;
+    margin: 70px 0 50px;
+    padding: 75px 70px;
+    float: right;
+}
+.image {
+    width: 40%;
+    display: inline-block;
+    background-image: url(../img/lorem.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 230px;
+}
+nav {
+    height: 20px;
+    position: absolute;
+    left: -308px;
+    top: 306px;
+    transform: rotate(-90deg);
+    padding: 30px 100px;
+}
+nav a {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.74;
+    letter-spacing: 5.7px;
+    text-align: left;
+    color: black;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+#home nav {
+    height: 100px;
+    position: absolute;
+    right: 130px;
+    top: 90px
+}
+#home nav a {
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.59);
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.74;
+    letter-spacing: 5.7px;
+    text-align: left;
+    color: #ffffff;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+p {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.86;
+    letter-spacing: 0.1px;
+    color: #253628;
+}
+.shuddle{
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+}
+.shuddle img{
+    width: 400px;
+    height: 100%;
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    max-height: 225px;
+}
+.shuddle-arrow-box {
+    width: 186px;
+    height: 50px;
+    background-image: linear-gradient(71deg, #253628, #162118);
+    float:right;
+}
+.shuddle-info {
+    height: 290px;
+    width: 333px;
+    display: inline-block;
+    vertical-align: top;
+}
+.shuddle-text{
+    width: auto;
+    height: 100%;
+    display: inline-block;
+    background-image: linear-gradient(300deg, #162118, #253628);
+    padding: 15px 55px 15px 55px;
+}
+.shuddle-text h3, .shuddle-text p{
+    color: white;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .block, .contact {
+        width: calc(100% - 140px);
+        padding: 75px 70px;
+        text-align: left;
+    }
+    .interal-information .header {
+        margin-bottom: 0;
+    }
+    .interal-hero {
+        background-position: center center; 
+        position: fixed;
+        z-index: -1;
+    }    
+    .interal-hero h1{
+        left: 20px;
+    }
+    body {
+        overflow: auto;
+    }
+    .image {
+        background-position: center center;
+        width: 100%;
+    }
+    .interal-information {
+        float: right;
+    }
+    nav{
+    position: fixed;
+    }
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .interal-hero {
+        width: 100%;
+        height: 300px;
+        margin: 0;
+        position: static;
+    }
+    .interal-information .header {
+        width: calc(100% - 140px);
+        float:none;
+        margin: 0;
+        height: auto;
+    }
+    nav {
+        height: 20px;
+        position: absolute;
+        left: 0;
+        right:0;
+        top: 0;
+        transform: rotate(0deg);
+    }
+    .interal-hero h1 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 80px;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 0;
+    }
+    .interal-information {
+        width: 100%;
+    }
+    body {
+        overflow: auto;
+        text-align: center;
+    }
+    .block, .contact {
+        width: calc(100% - 140px);
+        padding: 75px 70px;
+    }
+    h1, h2, h3, h4, h5, h6, p {
+        text-align: center;
+    }
+}
