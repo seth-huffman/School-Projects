@@ -4,7 +4,7 @@ A comprehensive collection of coursework and learning projects spanning multiple
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
 - [Project Overview](#project-overview)
 - [Directory Structure](#directory-structure)
@@ -154,7 +154,7 @@ bash ldapsearch.sh
 
 ## Project Details
 
-### 📂 Admin/
+### Admin/
 **Purpose**: LDAP (Lightweight Directory Access Protocol) administration scripts for managing directory services.
 
 **Key Files**:
@@ -176,7 +176,7 @@ bash add.sh
 
 ---
 
-### 🎮 CPlusPlus/
+### CPlusPlus/
 **Purpose**: C++ projects covering game development, file handling, data structures, and object-oriented programming.
 
 #### **Castle/** - Interactive Text Adventure Game
@@ -220,7 +220,7 @@ Object-oriented programming examples using C++ classes.
 
 ---
 
-### 🌐 HTML/
+### HTML/
 **Purpose**: Interactive web applications built with HTML, CSS, and JavaScript.
 
 #### **Calculator/** - Interactive Web Calculator
@@ -266,7 +266,7 @@ A web project for self-exploration and learning web technologies.
 
 ---
 
-### ☕ Java/
+### Java/
 **Purpose**: Java programming assignments and labs covering fundamentals to advanced OOP concepts.
 
 #### **Root Level Files** - Basic Assignments and Labs
@@ -312,7 +312,7 @@ mvn test
 
 ---
 
-### 🐍 Python/
+### Python/
 **Purpose**: Python programming assignments and exercises (00-15).
 
 Each folder (00 through 15) contains Python assignment files for different topics.
@@ -325,7 +325,7 @@ python3 solution.py
 
 ---
 
-### 🗄️ SQL/
+### SQL/
 **Purpose**: Database management and SQL course materials from CIS332.
 
 #### **01_course_materials/**
@@ -367,7 +367,7 @@ SQL> @sethhuffman_ch4.sql
 
 ---
 
-### 📄 PHP/
+### PHP/
 **Purpose**: PHP web development assignments (Assignment1 through Assignment5).
 
 Each folder contains a PHP assignment project.
@@ -381,7 +381,7 @@ php -S localhost:8000
 
 ---
 
-## 🚀 Quick Start Guide
+## Quick Start Guide
 
 ### To Run Any Java Project:
 ```bash
@@ -416,7 +416,7 @@ python3 filename.py
 
 ---
 
-## 📝 Notes
+## Notes
 
 - Most Java assignments use standard input/output via Scanner or console
 - C++ projects may require specific compiler flags (e.g., `-std=c++11`)
@@ -426,7 +426,7 @@ python3 filename.py
 
 ---
 
-## 📚 Course Information
+## Course Information
 
 These projects are from various computer science courses including:
 - CSE 110 - Introduction to Programming (Java)
